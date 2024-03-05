@@ -6,7 +6,7 @@ describe('ol-ambulance-wl-app', () => {
   it('renders editor', async () => {
     const page = await newSpecPage({
       url: `http://localhost/entry/@new`,
-      components: [olAmbulanceWlApp],
+      components: [OlAmbulanceWlApp],
       html: `<ol-ambulance-wl-app base-path="/"></ol-ambulance-wl-app>`,
     });
     page.win.navigation = new EventTarget()
@@ -18,7 +18,7 @@ describe('ol-ambulance-wl-app', () => {
   it('renders list', async () => {
     const page = await newSpecPage({
       url: `http://localhost/ambulance-wl/`,
-      components: [olAmbulanceWlApp],
+      components: [OlAmbulanceWlApp],
       html: `<ol-ambulance-wl-app base-path="/ambulance-wl/"></ol-ambulance-wl-app>`,
     });
     page.win.navigation = new EventTarget()
